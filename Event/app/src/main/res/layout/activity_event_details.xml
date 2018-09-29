@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eventdesc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3e7e7"
+    tools:context=".EventDetails">
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="315dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="44dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="43dp" />
+
+    <TextView
+        android:id="@+id/eventcoord"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="145dp"
+        android:fontFamily="serif"
+        android:text="TextView"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/attendbtn"
+        android:layout_width="124dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="97dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="Attend"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="366dp" />
+
+    <TextView
+        android:id="@+id/eventdate"
+        android:layout_width="339dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/eventcoord"
+        android:layout_marginTop="195dp"
+        android:text="TextView"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="146dp"
+        android:layout_height="73dp"
+        android:layout_alignBottom="@+id/attendees"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_marginBottom="-7dp"
+        android:background="@android:color/background_light"
+        android:shadowColor="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="253dp"
+        android:layout_marginStart="63dp"
+        android:text="ATTENDEES"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/attendees"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="221dp"
+        android:layout_toEndOf="@+id/textView17"
+        android:gravity="center"
+        android:text="10"
+        android:textColor="@android:color/background_dark" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="116dp"
+        android:layout_height="29dp"
+        android:layout_alignBottom="@+id/eventcoord"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="25dp"
+        android:text="Coorinator :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView16"
+        android:layout_alignTop="@+id/eventdate"
+        android:text="Date :"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp" />
+
+</RelativeLayout>

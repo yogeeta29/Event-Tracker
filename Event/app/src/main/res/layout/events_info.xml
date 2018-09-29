@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rrDisplay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/eventname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="name"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/eventCoord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eventname"
+        android:fontFamily="serif"
+        android:text="Coordinator"
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/eventdate"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/eventCoord"
+        android:fontFamily="serif"
+        android:text="Date"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="155dp"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/delete"
+        android:layout_marginEnd="85dp"
+        android:text="Update" />
+
+    <ImageView
+        android:id="@+id/leftArrow"
+        android:layout_width="44dp"
+        android:layout_height="38dp"
+        android:layout_alignBottom="@+id/delete"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        app:srcCompat="@drawable/ic_keyboard_arrow_right_black_24dp" />
+
+
+</RelativeLayout>

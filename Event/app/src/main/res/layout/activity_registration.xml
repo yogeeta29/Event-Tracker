@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".RegistrationActivity">
+
+    <ImageView
+        android:id="@+id/ivRegLogo"
+        android:layout_width="316dp"
+        android:layout_height="368dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="189dp"
+        android:background="@drawable/my_et_style"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etUserPassword"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="198dp"
+        android:background="@drawable/my_et_style"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Password"
+        android:inputType="textWebPassword" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/background_login"
+        android:text="Register" />
+
+    <EditText
+        android:id="@+id/etUserEmail"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/my_et_style"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Email Id"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/tvUserLogin"
+        android:layout_width="253dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/background_signup"
+        android:gravity="center"
+        android:text="Already registered ? Login"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:text="Registration"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
